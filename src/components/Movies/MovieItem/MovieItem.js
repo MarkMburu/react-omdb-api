@@ -11,16 +11,13 @@ const MovieItem = ({movie}) => {
         <h1>{movie.Title}</h1>
         <ul>
           <li>
-            <strong> Movie Title:</strong> {movie.Title}
+            <strong>Title:</strong> {movie.Title}
           </li>
           <li>
             <strong>Year :</strong> {movie.Year}
           </li>
           <li>
             <strong>Type :</strong> {movie.Type}
-          </li>
-          <li>
-            {/* <strong>Status:</strong> {item.status} */}
           </li>
         </ul>
       </div>

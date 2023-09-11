@@ -1,10 +1,10 @@
 import React from "react";
 import "./App.css";
-import Movie from "./components/Movies/Movie";
+import Movies from "./components/Movies/Movies";
 
 function App() {
   return (
-    <Movie />
+    <Movies />
   );
 }
 
