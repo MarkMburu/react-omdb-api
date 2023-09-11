@@ -59,6 +59,7 @@ import getMovieRequest from "../../services/MovieService";
 import SearchBox from "../Search/SearchBox";
 import MovieList from "./MovieLIst/MovieList";
 import styles from "./Movies.module.css";
+import Header from "../Header/Header";
 
 const Movies = () => {
   const [movies, setMovies] = useState([]);
@@ -96,6 +97,7 @@ const Movies = () => {
 
   return (
     <div>
+      <Header heading="Movie Hub"/>
       <div>
         <SearchBox
           searchValue={searchValue}
