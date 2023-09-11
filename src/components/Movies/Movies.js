@@ -66,6 +66,7 @@ const Movies = () => {
   const [searchValue, setSearchValue] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
   const [isLoading, setIsLoading] = useState(false);
+  
   const pageSize = 8;
 
   useEffect(() => {
@@ -74,12 +75,10 @@ const Movies = () => {
         setMovies([]);
         return;
       }
-
       setIsLoading(true);
       const movieData = await getMovieRequest(searchValue);
       setIsLoading(false);
-
-      if (movieData.length === 0) {
+      if (movieData === 0) {
         setMovies([]);
       } else {
         setMovies(movieData);
