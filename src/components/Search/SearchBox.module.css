@@ -1,15 +1,17 @@
 .inputContainer{
-    margin: 5em;
-    display: flex;
-    justify-content: space-around;
     align-items: center;
-    width: 80vw;
-    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 3em;
 }
 
 .searchInput{
-    border-radius: 50px;
+    border-radius: 20px;
     width: 70vw;
     height: 3vw;
-    padding: 10px;
+    padding: 20px;
+    font-size: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
 }

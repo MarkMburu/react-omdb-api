@@ -20,7 +20,7 @@ const Movies = () => {
   const handlePageChange = (newPage) => {
     setCurrentPage(newPage);
   };
-
+  const totalPages = Math.ceil(movies.length / pageSize);
   return (
     <div>
       <div>
@@ -40,10 +40,10 @@ const Movies = () => {
             />
             <div className={styles.paginationContainer}>
 
-              <button className={styles.previous} onClick={() => handlePageChange(currentPage - 1)}>
+              <button className={styles.previous} disabled={currentPage === 1} onClick={() => handlePageChange(currentPage - 1)}>
                 Previous
               </button>
-              <button className={styles.next} onClick={() => handlePageChange(currentPage + 1)}>Next</button>
+              <button className={styles.next} disabled={currentPage === totalPages} onClick={() => handlePageChange(currentPage + 1)}>Next</button>
             </div>
           </div>
         ) : (
